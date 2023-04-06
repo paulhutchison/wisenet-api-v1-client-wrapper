@@ -12,7 +12,7 @@
     "license": "proprietary",
     "authors": [
         {
-            "name": "Phwebs",
+            "name": "Phwebs"
         }
     ],
     "require": {
@@ -28,9 +28,13 @@
         "friendsofphp/php-cs-fixer": "^3.5"
     },
     "autoload": {
-        "psr-4": { "Phwebs\\Wisenet\\" : "lib/" }
+        "psr-4": {
+            "Phwebs\\Wisenet\\": "lib/"
+        }
     },
     "autoload-dev": {
-        "psr-4": { "Phwebs\\Wisenet\\" : "test/" }
+        "psr-4": {
+            "Phwebs\\Wisenet\\": "test/"
+        }
     }
 }
