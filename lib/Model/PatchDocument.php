@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Phwebs\Wisenet
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -36,7 +36,7 @@ use \Phwebs\Wisenet\ObjectSerializer;
  *
  * @category Class
  * @description A JSONPatch document as defined by RFC 6902
- * @package  Swagger\Client
+ * @package  Phwebs\Wisenet
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

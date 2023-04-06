@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Phwebs\Wisenet
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Swagger\Client;
+namespace Phwebs\Wisenet;
 
 use Phwebs\Wisenet\Configuration;
 use Phwebs\Wisenet\ApiException;
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  * WorkplaceApiTest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Phwebs\Wisenet
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
