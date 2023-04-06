@@ -1,0 +1,10 @@
+# CourseItem
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**data** | [**\Phwebs\Wisenet\Model\Course**](Course.md) |  | [optional] 
+**relationships** | [**\Phwebs\Wisenet\Model\CourseRelationships**](CourseRelationships.md) |  | [optional] 
+
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
+

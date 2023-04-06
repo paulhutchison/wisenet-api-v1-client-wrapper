@@ -1,0 +1,44 @@
+# AgentRequest
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**agent_id** | **int** | Primary Id for Agent that is auto generated | [optional] 
+**name** | **string** | Name used to identify the Agent | [optional] 
+**code** | **string** | Code used to identify the Agent | [optional] 
+**agent_status_id** | **int** | See combo AgentStatuses | [optional] 
+**archived_flag** | **bool** | To indicate if Agent is Archived | [optional] 
+**assigned_to_staff_id** | **int** | See entity Staff | [optional] 
+**region_id** | **int** | See combo Regions | [optional] 
+**agent_alt_number** | **string** | Alternative number to identify the Agent | [optional] 
+**agent_classification_id** | **int** | See combo AgentClassifications | [optional] 
+**main_contact_first_name** | **string** | Main Contact First Name for Agent | [optional] 
+**main_contact_middle_name** | **string** | Main Contact Middle Name for Agent | [optional] 
+**main_contact_last_name** | **string** | Main Contact Last Name for Agent | [optional] 
+**email** | **string** | Agent Email | [optional] 
+**mobile** | **string** | Agent Mobile | [optional] 
+**phone** | **string** | Agent Phone | [optional] 
+**phone_other** | **string** | Agent Phone Other | [optional] 
+**fax** | **string** | Agent Fax | [optional] 
+**website** | **string** | Agent Website | [optional] 
+**business_number** | **string** | Agent Business Number | [optional] 
+**company_number** | **string** | Agent Company Number | [optional] 
+**registration_number** | **string** | Agent Registration Number | [optional] 
+**street_address** | [**\Phwebs\Wisenet\Model\AgentStreetAddress**](AgentStreetAddress.md) |  | [optional] 
+**postal_address** | [**\Phwebs\Wisenet\Model\AgentPostalAddress**](AgentPostalAddress.md) |  | [optional] 
+**vet_commission** | **int** | Agent VET Commission rate as a percentage | [optional] 
+**elicos_commission** | **int** | Agent ELICOS Commission rate as a percentage | [optional] 
+**enrolment_fee_flag** | **bool** | To indicate if Agent receives Enrolment Fee | [optional] 
+**regional_scholarship_flag** | **bool** | To indicate if Agent receives Regional Scholarship | [optional] 
+**regional_scholarship_code** | **string** | Regional Scholarship Code | [optional] 
+**last_visit_date** | [**\DateTime**](\DateTime.md) | Date Agent was last visited | [optional] 
+**agent_start_date** | [**\DateTime**](\DateTime.md) | Date Agent Started | [optional] 
+**agreement_sign_date** | [**\DateTime**](\DateTime.md) | Date last agreement was signed | [optional] 
+**agreement_expiry_date** | [**\DateTime**](\DateTime.md) | Date last agreement expires | [optional] 
+**general_notes** | **string** | Notes regarding the Agent | [optional] 
+**agent_agreement_status_id** | **int** | See combo AgentAgreementStatuses | [optional] 
+**primary_sales_contact_id** | **int** | See entity SalesContacts. This allows a primary Sales Contact to be defined. | [optional] 
+**promotion_ids** | **int[]** |  | [optional] 
+
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
+
