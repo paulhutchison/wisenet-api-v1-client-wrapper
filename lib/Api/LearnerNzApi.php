@@ -987,7 +987,7 @@ class LearnerNzApi
                     $e->getResponse() ? $e->getResponse()->getBody()->getContents() : null
                 );
             }
-
+            
             $statusCode = $response->getStatusCode();
 
             if ($statusCode < 200 || $statusCode > 299) {
@@ -1002,8 +1002,11 @@ class LearnerNzApi
                     $response->getBody()
                 );
             }
-
+            
+            
             $responseBody = $response->getBody();
+            // logData('getLearnersNZ');
+            // logData($responseBody->getContents());
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
             } else {
@@ -1582,7 +1585,7 @@ class LearnerNzApi
     {
         $returnType = '\Phwebs\Wisenet\Model\LearnerNzItem[]';
         $request = $this->postLearnersNZRequest($body);
-
+        
         try {
             $options = $this->createHttpClientOption();
             try {
@@ -1620,7 +1623,7 @@ class LearnerNzApi
                     $content = json_decode($content);
                 }
             }
-
+            
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
@@ -1745,7 +1748,7 @@ class LearnerNzApi
         if (isset($body)) {
             $_tempBody = $body;
         }
-
+        
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
                 ['application/json']
@@ -1785,7 +1788,7 @@ class LearnerNzApi
                 $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
             }
         }
-
+        
         // this endpoint requires API key authentication
         $apiKey = $this->config->getApiKeyWithPrefix('x-api-key');
         if ($apiKey !== null) {
